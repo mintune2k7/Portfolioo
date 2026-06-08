@@ -3,213 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trần Phong Hoà | Portfolio Digital 2026</title>
+    <title>Trần Phong Hoà | Portfolio 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f1f5f9; scroll-behavior: smooth; }
-        .grid-bg {
-            background-image: linear-gradient(#1e293b 1px, transparent 1px), linear-gradient(90deg, #1e293b 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; transition: all 0.3s; }
-        .card:hover { border-color: #38bdf8; transform: translateY(-5px); box-shadow: 0 20px 40px -20px rgba(56, 189, 248, 0.3); }
-        .drop-cap::first-letter { font-size: 4rem; font-weight: 800; color: #38bdf8; float: left; margin-right: 12px; line-height: 1; }
-        .status-tag { background: rgba(34, 197, 94, 0.1); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.2); }
+        .grid-bg { background-image: linear-gradient(#1e293b 1px, transparent 1px), linear-gradient(90deg, #1e293b 1px, transparent 1px); background-size: 40px 40px; }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; transition: all 0.3s; height: 100%; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-3px); }
+        .drop-cap::first-letter { font-size: 3.5rem; font-weight: 800; color: #38bdf8; float: left; margin-right: 10px; line-height: 1; }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="flex justify-between items-center px-6 md:px-20 py-5 sticky top-0 bg-[#020617]/90 backdrop-blur-xl z-50 border-b border-slate-800">
-        <div class="flex items-center gap-3">
-            <div class="bg-sky-500 text-white w-9 h-9 rounded-xl flex items-center justify-center font-bold shadow-lg shadow-sky-500/20">PH</div>
-            <span class="font-bold text-white tracking-tight">Trần Phong Hoà</span>
+    <!-- NAV -->
+    <nav class="flex justify-between items-center px-6 md:px-20 py-4 sticky top-0 bg-[#020617]/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="flex items-center gap-2">
+            <div class="bg-sky-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs">PH</div>
+            <span class="font-bold text-white text-sm">Trần Phong Hoà</span>
         </div>
-        <div class="hidden md:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
-            <a href="#home" class="hover:text-sky-400 transition">Đầu trang</a>
-            <a href="#about" class="hover:text-sky-400 transition">Giới thiệu</a>
-            <a href="#projects" class="hover:text-sky-400 transition">Bài tập</a>
-            <a href="#skills" class="hover:text-sky-400 transition">Kỹ năng</a>
+        <div class="hidden md:flex gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            <a href="#home">Đầu trang</a> <a href="#about">Giới thiệu</a> <a href="#projects">Bài tập</a> <a href="#skills">Kỹ năng</a> <a href="#reflections">Tổng kết</a>
         </div>
-        <div class="status-tag px-4 py-1.5 rounded-full text-[10px] font-bold flex items-center gap-2">
-            <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span></span>
-            UET • PORTFOLIO LIVE
-        </div>
+        <div class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-[10px] font-bold border border-green-500/20">● UET • PORTFOLIO LIVE</div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="relative grid-bg pt-28 pb-40 px-5 text-center">
-        <div class="inline-block px-4 py-1.5 border border-sky-500/30 rounded-full text-sky-400 font-bold text-[10px] tracking-[0.4em] mb-8 bg-sky-500/5">● HỒ SƠ KỸ THUẬT SỐ • PORTFOLIO 2026</div>
-        <h1 class="text-6xl md:text-8xl font-black gradient-text mb-8 tracking-tighter">Trần Phong Hoà</h1>
-        <p class="max-w-3xl mx-auto text-slate-400 text-xl mb-6 leading-relaxed font-medium italic">
-            Sinh viên <span class="text-white border-b-2 border-sky-500">Công Nghệ Kỹ Thuật Điện Tử Viễn Thông</span> — Trường Đại học Công nghệ ĐHQGHN (UET)
+    <!-- HERO -->
+    <section id="home" class="relative grid-bg pt-20 pb-32 px-5 text-center">
+        <div class="text-sky-400 font-bold text-[10px] tracking-[0.4em] mb-6 uppercase">● Hồ sơ kỹ thuật số • Portfolio 2026</div>
+        <h1 class="text-6xl md:text-7xl font-black gradient-text mb-6">Trần Phong Hoà</h1>
+        <p class="max-w-3xl mx-auto text-slate-300 text-lg mb-4 font-semibold">
+            Sinh viên <span class="text-sky-400">Công Nghệ Kỹ Thuật Điện Tử Viễn Thông</span> — Trường Đại học Công nghệ ĐHQGHN (UET)
         </p>
-        <p class="text-slate-500 text-sm mb-16 tracking-wide italic">"Rèn luyện tư duy số, ứng dụng AI có trách nhiệm, xây dựng nền tảng kỹ năng cho kỷ nguyên công nghệ."</p>
+        <p class="text-slate-500 text-xs italic mb-12">Rèn luyện tư duy số, ứng dụng AI có trách nhiệm, xây dựng nền tảng kỹ năng cho kỷ nguyên công nghệ.</p>
 
-        <!-- 4 Info Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto mb-16">
-            <div class="card p-5 flex items-center gap-5 text-left bg-slate-900/50">
-                <div class="w-12 h-12 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400 text-xl"><i class="fas fa-graduation-cap"></i></div>
-                <div><p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Ngành học</p><p class="text-[12px] font-bold text-white">CNKT Điện Tử Viễn Thông</p></div>
-            </div>
-            <div class="card p-5 flex items-center gap-5 text-left bg-slate-900/50">
-                <div class="w-12 h-12 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400 text-xl"><i class="fas fa-microchip"></i></div>
-                <div><p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Môn học</p><p class="text-[12px] font-bold text-white">Công nghệ số & UDTTNT</p></div>
-            </div>
-            <div class="card p-5 flex items-center gap-5 text-left bg-slate-900/50 text-ellipsis overflow-hidden">
-                <div class="w-12 h-12 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400 text-xl"><i class="fas fa-envelope"></i></div>
-                <div><p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Liên hệ</p><p class="text-[12px] font-bold text-white">25022603@vnu.edu.vn</p></div>
-            </div>
-            <div class="card p-5 flex items-center gap-5 text-left bg-slate-900/50">
-                <div class="w-12 h-12 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400 text-xl"><i class="fas fa-location-dot"></i></div>
-                <div><p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Địa chỉ</p><p class="text-[12px] font-bold text-white">Hà Nội, Việt Nam</p></div>
-            </div>
-        </div>
-
-        <div class="flex justify-center gap-6">
-            <a href="#projects" class="bg-sky-500 text-white px-10 py-4 rounded-xl font-bold text-xs flex items-center gap-3 hover:bg-sky-400 shadow-xl shadow-sky-500/20 transition-all uppercase tracking-widest">
-                <i class="fas fa-th-large"></i> Xem dự án & bài tập
-            </a>
-            <button class="bg-slate-800 text-slate-300 px-10 py-4 rounded-xl font-bold text-xs border border-slate-700 hover:bg-slate-700 transition-all uppercase tracking-widest">Tổng kết & Nhận xét</button>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10 text-left">
+            <div class="card p-4"><p class="text-[9px] text-slate-500 font-bold uppercase">Ngành học</p><p class="text-[11px] font-bold">CNKT Điện Tử Viễn Thông • UET</p></div>
+            <div class="card p-4"><p class="text-[9px] text-slate-500 font-bold uppercase">Môn học</p><p class="text-[11px] font-bold">Công nghệ số & UDTTNT</p></div>
+            <div class="card p-4"><p class="text-[9px] text-slate-500 font-bold uppercase">Liên hệ</p><p class="text-[11px] font-bold text-ellipsis overflow-hidden">25022603@vnu.edu.vn</p></div>
+            <div class="card p-4"><p class="text-[9px] text-slate-500 font-bold uppercase">Địa chỉ</p><p class="text-[11px] font-bold">Hà Nội, Việt Nam</p></div>
         </div>
     </section>
 
-    <!-- SECTION 01: INTRO -->
-    <section id="about" class="max-w-6xl mx-auto py-32 px-5">
-        <div class="flex flex-col md:flex-row gap-20">
-            <div class="flex-1">
-                <div class="text-[11px] font-bold text-sky-400 mb-3 tracking-[0.3em] uppercase">01 // About History</div>
-                <h2 class="text-4xl font-extrabold mb-10 text-white tracking-tight">Giới thiệu bản thân</h2>
-                <div class="text-slate-400 leading-relaxed text-lg drop-cap mb-10">
-                    Xin chào! Mình là <b class="text-white">Trần Phong Hoà</b>, sinh viên ngành Công Nghệ Kỹ Thuật Điện Tử Viễn Thông, khoa Điện tử viễn thông, tại Trường Đại Học Công nghệ - ĐHQGHN (UET). Mình có niềm đam mê sâu sắc với công nghệ lập trình, điện tử viễn thông và các hệ thống truyền thông thông minh tích hợp trí tuệ nhân tạo. 
-                    <br><br>Mẫu Portfolio số này được xây dựng trong khuôn khổ môn học <b class="text-sky-400">Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</b>, nhằm tổng hợp, hệ thống hóa và thể hiện xuất sắc 6 nhóm kỹ năng cốt lõi đã được lĩnh hội trong suốt khóa học.
+    <!-- 01 // GIỚI THIỆU -->
+    <section id="about" class="max-w-6xl mx-auto py-20 px-5">
+        <div class="text-sky-400 font-bold text-[10px] mb-2 uppercase">01 // About History</div>
+        <h2 class="text-3xl font-bold mb-10">Giới thiệu bản thân</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <p class="text-slate-400 leading-relaxed drop-cap text-sm">
+                    in chào! Mình là <b>Trần Phong Hoà</b>, sinh viên ngành <b>Công Nghệ Kỹ Thuật Điện Tử Viễn Thông</b>, khoa Điện tử viễn thông, tại Trường Đại Học Công nghệ - ĐHQGHN (UET). Mình có niềm đam mê sâu sắc với công nghệ lập trình, điện tử viễn thông và các hệ thống truyền thông thông minh tích hợp trí tuệ nhân tạo.
+                </p>
+                <p class="text-slate-400 leading-relaxed text-sm mt-4">
+                    Mẫu Portfolio số này được xây dựng trong khuôn khổ môn học <b>Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</b>, nhằm tổng hợp, hệ thống hóa và thể hiện xuất sắc 6 nhóm kỹ năng cốt lõi đã được lĩnh hội trong suốt khóa học.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mt-8 italic">
+                    <div class="card p-4 border-l-4 border-l-rose-500">
+                        <h4 class="text-[10px] font-bold text-sky-400 uppercase mb-2">🎯 Mục tiêu học tập</h4>
+                        <p class="text-[11px] text-slate-500">Xây dựng nền tảng vững chắc về kỹ thuật điện tử và viễn thông, đồng thời tích hợp chặt chẽ công nghệ số và trí tuệ nhân tạo.</p>
+                    </div>
+                    <div class="card p-4 border-l-4 border-l-sky-500">
+                        <h4 class="text-[10px] font-bold text-sky-400 uppercase mb-2">📂 Mục tiêu Portfolio</h4>
+                        <p class="text-[11px] text-slate-500">Hệ thống hóa một cách trực quan kết quả các bài tập thực hành thành phần đã hoàn thành, thể hiện tính thực tế.</p>
+                    </div>
                 </div>
-                
-                <!-- Goals -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="card p-6 border-l-4 border-l-rose-500">
-                        <h4 class="text-sky-400 font-bold text-xs uppercase mb-3 flex items-center gap-2"><i class="fas fa-bullseye"></i> Mục tiêu học tập</h4>
-                        <p class="text-[13px] text-slate-400 leading-relaxed">Xây dựng nền tảng vững chắc về kỹ thuật điện tử và viễn thông, đồng thời tích hợp chặt chẽ công nghệ số và trí tuệ nhân tạo vào thiết kế phần cứng và phần mềm.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-900 p-6 rounded-xl flex flex-col justify-between"><span class="text-5xl font-bold">6</span><p class="text-[9px] text-slate-500 uppercase font-bold">Bài tập hoàn thành xuất sắc</p></div>
+                <div class="bg-slate-900 p-6 rounded-xl flex flex-col justify-between"><span class="text-5xl font-bold">100%</span><p class="text-[9px] text-slate-500 uppercase font-bold">Tiến độ hoàn thành tài liệu</p></div>
+                <div class="card p-6 flex flex-col justify-center items-center"><span class="text-xl font-bold text-sky-400">AI</span><p class="text-[9px] text-slate-500 uppercase font-bold mt-2 text-center">Trợ lý số AI Co-Author</p></div>
+                <div class="bg-indigo-900/50 p-6 rounded-xl flex flex-col justify-between"><span class="text-4xl font-bold">2026</span><p class="text-[9px] text-slate-500 uppercase font-bold">Niên học khóa học thực thi</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 // BÀI TẬP -->
+    <section id="projects" class="bg-slate-900/30 py-20 px-5 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-sky-400 font-bold text-[10px] mb-2 uppercase">02 // Work Portfolio</div>
+            <h2 class="text-3xl font-bold mb-10">Các bài tập & Dự án cá nhân</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Project Loop -->
+                <div class="card p-6 border-t-4 border-t-amber-400 relative">
+                    <span class="absolute top-4 right-4 text-4xl font-bold text-slate-800">01</span>
+                    <p class="text-[9px] font-bold text-slate-500 mb-2">BÀI 1 • MỤC 1.4 - THAO TÁC VỚI TỆP TIN</p>
+                    <h3 class="font-bold text-md mb-3 text-white">Quản lý tệp và thư mục</h3>
+                    <p class="text-[12px] text-slate-400 mb-6">Xây dựng cấu trúc thư mục khoa học, áp dụng quy tắc đặt tên chuẩn quốc tế YYYYMMDD_MônHoc_TênFile. Trình bày bài tập trên OneDrive.</p>
+                    <div class="text-[9px] text-slate-500 font-bold">FILE SYSTEM • NAMING CONVENTION</div>
+                </div>
+                <div class="card p-6 border-t-4 border-t-sky-400 relative">
+                    <span class="absolute top-4 right-4 text-4xl font-bold text-slate-800">02</span>
+                    <p class="text-[9px] font-bold text-slate-500 mb-2">BÀI 2 • MỤC 2.4 - TÌM KIẾM HỌC THUẬT</p>
+                    <h3 class="font-bold text-md mb-3 text-white">Tìm kiếm & đánh giá thông tin</h3>
+                    <p class="text-[12px] text-slate-400 mb-6">Sử dụng các toán tử tìm kiếm nâng cao (site:, filetype:, AND/OR) trên Google Scholar. Lập bảng đánh giá các nguồn tin cậy.</p>
+                    <div class="text-[9px] text-slate-500 font-bold uppercase">Google Scholar • Boolean Search</div>
+                </div>
+                <div class="card p-6 border-t-4 border-t-indigo-400 relative">
+                    <span class="absolute top-4 right-4 text-4xl font-bold text-slate-800">03</span>
+                    <p class="text-[9px] font-bold text-slate-500 mb-2">BÀI 3 • MỤC 3.4 - PROMPT ENGINEERING</p>
+                    <h3 class="font-bold text-md mb-3 text-white">Viết Prompt hiệu quả cho AI</h3>
+                    <p class="text-[12px] text-slate-400 mb-6">Áp dụng kỹ thuật thiết kế Prompt Engineering có cấu trúc để cải thiện chất lượng đầu ra. So sánh kết quả đối chiếu giữa các LLM.</p>
+                    <div class="text-[9px] text-slate-500 font-bold uppercase">Prompt Design • Chatbot AI</div>
+                </div>
+                <div class="card p-6 border-t-4 border-t-emerald-400 relative">
+                    <span class="absolute top-4 right-4 text-4xl font-bold text-slate-800">04</span>
+                    <p class="text-[9px] font-bold text-slate-500 mb-2">BÀI 4 • MỤC 4.4 - HỢP TÁC NHÓM SỐ</p>
+                    <h3 class="font-bold text-md mb-3 text-white">Công cụ hợp tác trực tuyến</h3>
+                    <p class="text-[12px] text-slate-400 mb-6">Sử dụng các không gian cộng tác số để quản lý tiến độ dự án nhóm. Thiết lập phân công nhiệm vụ, chuẩn hóa quy trình trao đổi.</p>
+                    <div class="text-[9px] text-slate-500 font-bold uppercase">Notion • Google Workspace</div>
+                </div>
+                <div class="card p-6 border-t-4 border-t-rose-400 relative">
+                    <span class="absolute top-4 right-4 text-4xl font-bold text-slate-800">05</span>
+                    <p class="text-[9px] font-bold text-slate-500 mb-2">BÀI 5 • MỤC 5.4 - GENERATIVE AI</p>
+                    <h3 class="font-bold text-md mb-3 text-white">AI tạo sinh hỗ trợ sáng tạo nội dung</h3>
+                    <p class="text-[12px] text-slate-400 mb-6">Tạo ra sản phẩm nội dung sáng tạo có sự cộng tác và định hướng của Interactive AI. Trình bày chi tiết quy trình con người làm chủ AI.</p>
+                    <div class="text-[9px] text-slate-500 font-bold uppercase">Canva AI • Robot Simulation</div>
+                </div>
+                <div class="card p-6 border-t-4 border-t-slate-300 relative">
+                    <span class="absolute top-4 right-4 text-4xl font-bold text-slate-800">06</span>
+                    <p class="text-[9px] font-bold text-slate-500 mb-2">BÀI 6 • MỤC 6.4 - AI ETHICS</p>
+                    <h3 class="font-bold text-md mb-3 text-white">Sử dụng AI có trách nhiệm</h3>
+                    <p class="text-[12px] text-slate-400 mb-6">Xây dựng các nguyên tắc đạo đức cá nhân trong tương tác với AI. Khẳng định giới hạn đạo đức số, thực hành liêm chính.</p>
+                    <div class="text-[9px] text-slate-500 font-bold uppercase">Academic Integrity • Responsible AI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 // KỸ NĂNG -->
+    <section id="skills" class="max-w-6xl mx-auto py-20 px-5 text-center">
+        <div class="text-sky-400 font-bold text-[10px] mb-2 uppercase">03 // Tech Stack</div>
+        <h2 class="text-3xl font-bold mb-12">Kỹ năng số đã tích lũy</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-folder-open"></i></div><p class="text-[11px] font-bold uppercase">Quản lý dữ liệu</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-search"></i></div><p class="text-[11px] font-bold uppercase">Tìm kiếm học thuật</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-terminal"></i></div><p class="text-[11px] font-bold uppercase">Prompt Engineering</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-users"></i></div><p class="text-[11px] font-bold uppercase">Hợp tác số</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-wand-magic-sparkles"></i></div><p class="text-[11px] font-bold uppercase">AI Sáng tạo</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-scale-balanced"></i></div><p class="text-[11px] font-bold uppercase">AI có trách nhiệm</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fab fa-python"></i></div><p class="text-[11px] font-bold uppercase">Python cơ bản</p></div>
+            <div class="flex flex-col items-center"><div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-sky-400 mb-3"><i class="fas fa-chart-line"></i></div><p class="text-[11px] font-bold uppercase">Phân tích dữ liệu</p></div>
+        </div>
+    </section>
+
+    <!-- 04 // TỔNG KẾT (TRANG 2 PDF) -->
+    <section id="reflections" class="bg-slate-900/50 py-20 px-5 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <div class="text-sky-400 font-bold text-[10px] mb-2 uppercase tracking-widest">04 // Reflections</div>
+                <h2 class="text-3xl font-bold mb-8">Tổng kết & Cảm nhận</h2>
+                <div class="space-y-6">
+                    <div class="card p-6 border-l-4 border-l-amber-400">
+                        <h4 class="text-[10px] font-bold text-amber-400 uppercase mb-2">💡 Trải nghiệm & Cảm nhận</h4>
+                        <p class="text-[12px] text-slate-400 leading-relaxed">Qua quá trình thực hiện Portfolio cá nhân, mình sâu sắc nhận ra công nghệ số không đơn giản chỉ là công cụ hỗ trợ mà còn là kỹ năng cấp về tư duy. Mỗi kỹ năng đều có những nền tảng logic và quy tắc hệ thống chặt chẽ giúp tối ưu hóa hơn 50% thời gian tìm kiếm cứu hộ thông tin.</p>
                     </div>
                     <div class="card p-6 border-l-4 border-l-sky-500">
-                        <h4 class="text-sky-400 font-bold text-xs uppercase mb-3 flex items-center gap-2"><i class="fas fa-folder-open"></i> Mục tiêu Portfolio</h4>
-                        <p class="text-[13px] text-slate-400 leading-relaxed">Hệ thống hóa một cách trực quan kết quả các bài tập thực hành thành phần đã hoàn thành, thể hiện tính thực tế và tư duy đạo đức của bản thân đối với công nghệ.</p>
+                        <h4 class="text-[10px] font-bold text-sky-400 uppercase mb-2">⭐ Điểm tâm đắc nhất</h4>
+                        <p class="text-[12px] text-slate-400 leading-relaxed">Chính là phần thực hành về <b>Viết Prompt hiệu quả cho AI (Prompt Engineering)</b>. Chương này hoàn toàn thay đổi tư duy giao tiếp cộng tác với AI, đưa AI trở thành trợ lý cá nhân đắc lực nhất hỗ trợ gọt giũa tư duy.</p>
+                    </div>
+                    <div class="card p-6 border-l-4 border-l-rose-500">
+                        <h4 class="text-[10px] font-bold text-rose-500 uppercase mb-2">⚠️ Thách thức & Khắc phục</h4>
+                        <ul class="text-[11px] text-slate-500 space-y-2 mt-2">
+                            <li>• Ban đầu gặp khó khăn trong việc định hình kết cấu và sắp xếp lưu trữ tệp tin khoa học.</li>
+                            <li>• Quy trình tìm kiếm học thuật tốn nhiều thời gian lọc tin giả và bám sát các tiêu chuẩn học thuật.</li>
+                            <li>• Cần rạch ròi cân bằng tuyệt đối giữa việc tận dụng sức mạnh AI và đảm bảo tính trung thực.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <!-- Side Stats -->
-            <div class="md:w-1/3 grid grid-cols-2 gap-4 h-fit">
-                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl flex flex-col justify-between aspect-square">
-                    <span class="text-6xl font-black text-white">6</span>
-                    <p class="text-[10px] font-bold text-slate-500 uppercase leading-tight tracking-widest">Bài tập hoàn thành xuất sắc</p>
-                </div>
-                <div class="bg-sky-500 p-8 rounded-3xl flex flex-col justify-between aspect-square shadow-2xl shadow-sky-500/20">
-                    <span class="text-6xl font-black text-white">100%</span>
-                    <p class="text-[10px] font-bold text-sky-100 uppercase leading-tight tracking-widest">Tỷ lệ tiến độ hoàn thành</p>
-                </div>
-                <div class="border border-slate-800 p-8 rounded-3xl flex flex-col justify-between aspect-square text-center">
-                    <span class="text-3xl font-black text-sky-400">AI</span>
-                    <p class="text-[10px] font-bold text-slate-500 uppercase leading-tight tracking-widest">Trợ lý số AI Co-author</p>
-                </div>
-                <div class="bg-indigo-600 p-8 rounded-3xl flex flex-col justify-between aspect-square shadow-2xl shadow-indigo-600/20">
-                    <span class="text-4xl font-black text-white">2026</span>
-                    <p class="text-[10px] font-bold text-indigo-100 uppercase leading-tight tracking-widest">Khóa học thực thi</p>
-                </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-sm tracking-widest border-b border-slate-800 pb-2">Kiến thức & Kỹ năng quan trọng:</h4>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 text-[12px] text-slate-400"><i class="fas fa-check-circle text-sky-400 mt-1"></i> <div><b>1. Tư duy tổ chức dữ liệu:</b> Sắp xếp cấu trúc dữ liệu khoa học giúp tối ưu hiệu suất tìm kiếm.</div></li>
+                    <li class="flex gap-3 text-[12px] text-slate-400"><i class="fas fa-check-circle text-sky-400 mt-1"></i> <div><b>2. Tìm kiếm học thuật nâng cao:</b> Kiểm soát phép toán Boolean lọc nhanh kết quả tin cậy tuyệt đối.</div></li>
+                    <li class="flex gap-3 text-[12px] text-slate-400"><i class="fas fa-check-circle text-sky-400 mt-1"></i> <div><b>3. Prompt Engineering chuyên nghiệp:</b> Kỹ năng ra lệnh khoa học giúp AI trở thành trợ lý đắc lực.</div></li>
+                    <li class="flex gap-3 text-[12px] text-slate-400"><i class="fas fa-check-circle text-sky-400 mt-1"></i> <div><b>4. Sử dụng AI có trách nhiệm:</b> Định hình phong cách nhân văn, liêm chính số sinh viên kỷ nguyên số.</div></li>
+                    <li class="flex gap-3 text-[12px] text-slate-400"><i class="fas fa-check-circle text-sky-400 mt-1"></i> <div><b>5. Hợp tác làm việc nhóm số:</b> Sử dụng phần mềm tương tác giúp quản trị tốt phối hợp mục tiêu.</div></li>
+                    <li class="flex gap-3 text-[12px] text-slate-400"><i class="fas fa-check-circle text-sky-400 mt-1"></i> <div><b>6. Sáng tạo với generative AI:</b> Cộng lực đồ họa thông minh gia tăng năng suất mô phỏng thực tế.</div></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 02: WORK PORTFOLIO -->
-    <section id="projects" class="bg-[#010413] py-32 px-5 border-y border-slate-900 relative overflow-hidden">
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="text-[11px] font-bold text-sky-400 mb-3 tracking-[0.3em] uppercase text-center">02 // Work Portfolio</div>
-            <h2 class="text-4xl font-black mb-20 text-white tracking-tight text-center">Các bài tập & Dự án cá nhân</h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- BÀI 1 -->
-                <div class="card p-8 border-t-4 border-t-amber-400 relative group">
-                    <span class="absolute top-6 right-8 text-6xl font-black text-slate-800/40 group-hover:text-amber-500/10 transition-all">01</span>
-                    <p class="text-[10px] font-bold text-slate-500 mb-5 tracking-[0.2em] uppercase">Bài 1 • Thao tác tệp</p>
-                    <h3 class="font-bold text-xl mb-4 text-white leading-tight">Quản lý tệp và thư mục</h3>
-                    <p class="text-[14px] text-slate-400 mb-8 leading-relaxed">Xây dựng cấu trúc thư mục khoa học, áp dụng quy tắc đặt tên chuẩn quốc tế YYYYMMDD_MonHoc_TenFile. Trình bày bài tập trên OneDrive/GitHub.</p>
-                    <div class="flex gap-2"><span class="text-[9px] bg-amber-500/10 text-amber-500 px-3 py-1 rounded-full font-bold uppercase tracking-widest">File System</span></div>
-                </div>
-                <!-- BÀI 2 -->
-                <div class="card p-8 border-t-4 border-t-sky-400 relative group">
-                    <span class="absolute top-6 right-8 text-6xl font-black text-slate-800/40 group-hover:text-sky-500/10 transition-all">02</span>
-                    <p class="text-[10px] font-bold text-slate-500 mb-5 tracking-[0.2em] uppercase">Bài 2 • Tìm kiếm học thuật</p>
-                    <h3 class="font-bold text-xl mb-4 text-white leading-tight">Tìm kiếm & Đánh giá tin</h3>
-                    <p class="text-[14px] text-slate-400 mb-8 leading-relaxed">Sử dụng các toán tử tìm kiếm nâng cao (site:, filetype:, AND/OR) trên Google Scholar. Lập bảng đánh giá các nguồn tin cậy.</p>
-                    <div class="flex gap-2"><span class="text-[9px] bg-sky-500/10 text-sky-500 px-3 py-1 rounded-full font-bold uppercase tracking-widest">Boolean Search</span></div>
-                </div>
-                <!-- BÀI 3 -->
-                <div class="card p-8 border-t-4 border-t-indigo-400 relative group">
-                    <span class="absolute top-6 right-8 text-6xl font-black text-slate-800/40 group-hover:text-indigo-500/10 transition-all">03</span>
-                    <p class="text-[10px] font-bold text-slate-500 mb-5 tracking-[0.2em] uppercase">Bài 3 • Prompt Engineering</p>
-                    <h3 class="font-bold text-xl mb-4 text-white leading-tight">Viết Prompt hiệu quả AI</h3>
-                    <p class="text-[14px] text-slate-400 mb-8 leading-relaxed">Áp dụng kỹ thuật Prompt Engineering có cấu trúc để cải thiện chất lượng đầu ra. So sánh kết quả giữa các mô hình GPT và Claude.</p>
-                    <div class="flex gap-2"><span class="text-[9px] bg-indigo-500/10 text-indigo-500 px-3 py-1 rounded-full font-bold uppercase tracking-widest">AI Interaction</span></div>
-                </div>
-                <!-- BÀI 4 -->
-                <div class="card p-8 border-t-4 border-t-emerald-400 relative group">
-                    <span class="absolute top-6 right-8 text-6xl font-black text-slate-800/40 group-hover:text-emerald-500/10 transition-all">04</span>
-                    <p class="text-[10px] font-bold text-slate-500 mb-5 tracking-[0.2em] uppercase">Bài 4 • Hợp tác nhóm số</p>
-                    <h3 class="font-bold text-xl mb-4 text-white leading-tight">Công cụ hợp tác trực tuyến</h3>
-                    <p class="text-[14px] text-slate-400 mb-8 leading-relaxed">Sử dụng Notion/Google Workspace để quản lý tiến độ dự án nhóm. Thiết lập phân công nhiệm vụ, chuẩn hóa quy trình trao đổi.</p>
-                    <div class="flex gap-2"><span class="text-[9px] bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full font-bold uppercase tracking-widest">Collaboration</span></div>
-                </div>
-                <!-- BÀI 5 -->
-                <div class="card p-8 border-t-4 border-t-rose-400 relative group">
-                    <span class="absolute top-6 right-8 text-6xl font-black text-slate-800/40 group-hover:text-rose-500/10 transition-all">05</span>
-                    <p class="text-[10px] font-bold text-slate-500 mb-5 tracking-[0.2em] uppercase">Bài 5 • Generative AI</p>
-                    <h3 class="font-bold text-xl mb-4 text-white leading-tight">AI tạo sinh hồ trợ nội dung</h3>
-                    <p class="text-[14px] text-slate-400 mb-8 leading-relaxed">Tạo ra sản phẩm nội dung sáng tạo (slide/video) có sự cộng tác và định hướng của AI. Trình bày chi tiết quy trình con người kiểm soát AI.</p>
-                    <div class="flex gap-2"><span class="text-[9px] bg-rose-500/10 text-rose-500 px-3 py-1 rounded-full font-bold uppercase tracking-widest">Canva / Python</span></div>
-                </div>
-                <!-- BÀI 6 -->
-                <div class="card p-8 border-t-4 border-t-slate-100 relative group">
-                    <span class="absolute top-6 right-8 text-6xl font-black text-slate-800/40 group-hover:text-slate-100/10 transition-all">06</span>
-                    <p class="text-[10px] font-bold text-slate-500 mb-5 tracking-[0.2em] uppercase">Bài 6 • AI Ethics</p>
-                    <h3 class="font-bold text-xl mb-4 text-white leading-tight">Sử dụng AI có trách nhiệm</h3>
-                    <p class="text-[14px] text-slate-400 mb-8 leading-relaxed">Xây dựng các nguyên tắc đạo đức cá nhân trong tương tác với Trí tuệ nhân tạo. Khẳng định giới hạn đạo đức số và thực hành liêm chính học thuật.</p>
-                    <div class="flex gap-2"><span class="text-[9px] bg-slate-100/10 text-slate-100 px-3 py-1 rounded-full font-bold uppercase tracking-widest">Responsible AI</span></div>
-                </div>
+    <!-- 05 // AI ETHICS -->
+    <section id="ethics" class="py-20 px-5 max-w-6xl mx-auto">
+        <div class="text-sky-400 font-bold text-[10px] mb-2 uppercase tracking-[0.3em] text-center">05 // AI Ethics</div>
+        <h2 class="text-3xl font-bold mb-12 text-center">Nguyên tắc cá nhân sử dụng AI có trách nhiệm</h2>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div class="card p-5 text-center bg-slate-900 border-none">
+                <span class="text-sky-500 font-bold text-[10px]">01</span>
+                <h5 class="text-[10px] font-bold my-2 uppercase">Kiểm chứng thông tin</h5>
+                <p class="text-[9px] text-slate-500">Luôn đối chiếu dữ liệu AI cung cấp với nguồn tin cậy, không dùng nguyên bản.</p>
+            </div>
+            <div class="card p-5 text-center bg-slate-900 border-none text-[9px]">
+                <span class="text-sky-500 font-bold text-[10px]">02</span>
+                <h5 class="font-bold my-2 uppercase">Minh bạch AI</h5>
+                <p class="text-slate-500">Ghi rõ nguồn bài và cách thức sử dụng công cụ AI - Tuyệt đối không che giấu.</p>
+            </div>
+            <div class="card p-5 text-center bg-slate-900 border-none">
+                <span class="text-sky-500 font-bold text-[10px]">03</span>
+                <h5 class="text-[10px] font-bold my-2 uppercase">Không thay thế</h5>
+                <p class="text-[9px] text-slate-500">Dùng AI hỗ trợ ý tưởng và tối ưu, không để AI làm hộ toàn bộ bài làm.</p>
+            </div>
+            <div class="card p-5 text-center bg-slate-900 border-none">
+                <span class="text-sky-500 font-bold text-[10px]">04</span>
+                <h5 class="text-[10px] font-bold my-2 uppercase">Bảo vệ dữ liệu</h5>
+                <p class="text-[9px] text-slate-500">Bảo mật thông tin riêng tư, mật khẩu. Không nạp dữ liệu nhạy cảm vào AI.</p>
+            </div>
+            <div class="card p-5 text-center bg-slate-900 border-none">
+                <span class="text-sky-500 font-bold text-[10px]">05</span>
+                <h5 class="text-[10px] font-bold my-2 uppercase">Liêm chính số</h5>
+                <p class="text-[9px] text-slate-500">Sử dụng AI trên tinh thần tôn trọng quyền sở hữu trí tuệ và liêm chính học thuật.</p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 03: TECH STACK -->
-    <section id="skills" class="max-w-6xl mx-auto py-32 px-5 text-center">
-        <div class="text-[11px] font-bold text-sky-400 mb-3 tracking-[0.3em] uppercase">03 // Tech Stack</div>
-        <h2 class="text-4xl font-extrabold mb-20 text-white tracking-tight">Kỹ năng số đã tích lũy</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-16">
-            <div class="flex flex-col items-center group">
-                <div class="w-20 h-20 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6 text-sky-400 text-3xl group-hover:scale-110 group-hover:border-sky-500 transition-all shadow-xl shadow-sky-500/5"><i class="fas fa-folder-tree"></i></div>
-                <h4 class="font-bold text-sm text-slate-200">Quản lý dữ liệu</h4>
-                <p class="text-[10px] text-slate-500 mt-2 uppercase tracking-widest font-bold">Kỹ năng cốt lõi</p>
-            </div>
-            <div class="flex flex-col items-center group">
-                <div class="w-20 h-20 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6 text-sky-400 text-3xl group-hover:scale-110 group-hover:border-sky-500 transition-all shadow-xl shadow-sky-500/5"><i class="fas fa-magnifying-glass"></i></div>
-                <h4 class="font-bold text-sm text-slate-200">Tìm kiếm nâng cao</h4>
-                <p class="text-[10px] text-slate-500 mt-2 uppercase tracking-widest font-bold">Tư duy Boolean</p>
-            </div>
-            <div class="flex flex-col items-center group">
-                <div class="w-20 h-20 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6 text-sky-400 text-3xl group-hover:scale-110 group-hover:border-sky-500 transition-all shadow-xl shadow-sky-500/5"><i class="fas fa-terminal"></i></div>
-                <h4 class="font-bold text-sm text-slate-200">Prompt Engineering</h4>
-                <p class="text-[10px] text-slate-500 mt-2 uppercase tracking-widest font-bold">Giao tiếp trợ lý số</p>
-            </div>
-            <div class="flex flex-col items-center group">
-                <div class="w-20 h-20 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6 text-sky-400 text-3xl group-hover:scale-110 group-hover:border-sky-500 transition-all shadow-xl shadow-sky-500/5"><i class="fas fa-users-gear"></i></div>
-                <h4 class="font-bold text-sm text-slate-200">Hợp tác số</h4>
-                <p class="text-[10px] text-slate-500 mt-2 uppercase tracking-widest font-bold">Làm việc nhóm hybrid</p>
-            </div>
-            <div class="flex flex-col items-center group">
-                <div class="w-20 h-20 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6 text-sky-400 text-3xl group-hover:scale-110 group-hover:border-sky-500 transition-all shadow-xl shadow-sky-500/5"><i class="fas fa-wand-sparkles"></i></div>
+    <!-- FOOTER -->
+    <footer class="py-16 text-center border-t border-slate-900">
+        <h2 class="text-3xl font-black gradient-text mb-4">Trần Phong Hoà</h2>
+        <p class="text-slate-500 text-[10px] mb-8 font-bold uppercase tracking-widest">Sinh viên CNKT Điện Tử Viễn Thông • Khoa ĐTVT • UET</p>
+        <div class="flex justify-center gap-6 text-[11px] text-slate-400 mb-10">
+            <span><i class="fas fa-envelope mr-1"></i> 25022603@vnu.edu.vn</span>
+            <span><i class="fas fa-location-dot mr-1"></i> Hà Nội, Việt Nam</span>
+        </div>
+        <div class="bg-[#010413] py-6 text-[9px] font-bold text-slate-600 tracking-[0.3em]">
+            © 2026 TRẦN PHONG HOÀ • ĐHQGHN UET PORTFOLIO
+        </div>
+    </footer>
+
+</body>
+</html>
